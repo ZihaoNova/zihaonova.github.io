@@ -1,5 +1,13 @@
-<nav class="site-nav" aria-label="Section navigation">
-  {% for item in site.data.navigation %}
-    <a href="{{ item.url | escape }}">{{ item.title | escape }}</a>
-  {% endfor %}
-</nav>
+<header class="site-masthead">
+  <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+
+  <nav class="site-nav" aria-label="Section navigation">
+    {% for item in site.data.navigation %}
+      {% assign href = item.url %}
+      {% unless href contains '#' %}
+        {% assign href = href | relative_url %}
+      {% endunless %}
+      <a href="{{ href | escape }}">{{ item.title | escape }}</a>
+    {% endfor %}
+  </nav>
+</header>

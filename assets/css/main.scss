@@ -98,13 +98,29 @@ a:hover {
   text-decoration: none;
 }
 
-.site-nav {
+.site-masthead {
   border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+}
+
+.site-title {
+  color: var(--text);
+  flex: 0 0 auto;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-nav {
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
-  margin-bottom: 18px;
-  padding-bottom: 12px;
+  justify-content: flex-end;
 }
 
 .site-nav a {
@@ -223,6 +239,17 @@ a:hover {
 
   .content-card {
     padding: 22px 18px;
+  }
+
+  .site-masthead {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .site-nav {
+    gap: 12px 16px;
+    justify-content: flex-start;
   }
 
   .profile-avatar {
