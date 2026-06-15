@@ -38,7 +38,7 @@ def test_site_identity_config_is_zihao() -> None:
     assert 'repository               : "ZihaoNova/ZihaoNova.github.io"' in config
     assert 'url                      : "https://zihaonova.github.io"' in config
     assert 'name             : "Zihao Huang"' in config
-    assert 'bio              : "Zhejiang A&F University"' in config
+    assert 'bio              : "Faculty member (Lecturer), Zhejiang A&F University"' in config
     assert 'github           : "ZihaoNova"' in config
     assert "GOOGLE_SCHOLAR_ID" not in config
 
@@ -49,20 +49,42 @@ def test_homepage_content_is_zihao_profile() -> None:
     required_text = [
         "Zihao Huang",
         "Zhejiang A&F University",
-        "land-cover simulation",
-        "GeoTIFF validation",
-        "Dask/PyTorch geospatial pipelines",
+        "Faculty member (Lecturer)",
+        "University of Eastern Finland",
+        "forest resource remote sensing",
+        "forest age dynamics",
+        "forest carbon cycle modeling",
         "Selected Publications",
         "Selected Projects",
-        "Land-cover simulation workflows",
-        "Raster validation and AOI smoke checks",
-        "Windowed CA and Dask pipelines",
+        "An Algorithm of Forest Age Estimation Based on the Forest Disturbance and Recovery Detection",
+        "Integrating land use/cover change (LUCC) with forest aging",
+        "Assessing the impact of land use and cover change on above-ground carbon storage",
+        "Centennial spatiotemporal evolution of AGC in subtropical forests",
+        "Simulating Future LUCC by Coupling Climate Change and Human Effects",
+        "Spatiotemporal LUCC Simulation under Different RCP Scenarios",
+        "土地利用/覆盖变化及其对森林碳收支影响研究综述",
+        "Forest age estimation from disturbance and recovery",
+        "LUCC simulation under climate and human effects",
+        "Forest carbon storage and NEP projection",
     ]
 
     for text in required_text:
         assert text in homepage
 
     assert homepage.count("class='paper-box'") == 3
+
+
+def test_news_section_is_preserved() -> None:
+    homepage = read_text("_pages/about.md")
+
+    preserved_news = [
+        "I am rebuilding this academic homepage with the full WD7ang-old / AcadHomepage template as the base.",
+        "Organizing geospatial simulation workflows, raster validation notes, and project artifacts for public release.",
+        "Published a GitHub profile README focused on geospatial Python workflows.",
+    ]
+
+    for item in preserved_news:
+        assert item in homepage
 
 
 def test_navigation_anchors_are_stable() -> None:

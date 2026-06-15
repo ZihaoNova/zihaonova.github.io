@@ -5,7 +5,7 @@
 
 # Site Settings
 title                    : "Zihao Huang"
-description              : "Student at Zhejiang A&F University working on geospatial Python systems for land-cover simulation, raster processing, and scalable spatial modeling."
+description              : "Faculty member (Lecturer) at Zhejiang A&F University working on forest resource remote sensing, land use/cover change simulation, forest age dynamics, and forest carbon cycle modeling."
 url                      : "https://zihaonova.github.io"
 repository               : "ZihaoNova/ZihaoNova.github.io"
 google_scholar_stats_use_cdn : true
@@ -23,7 +23,7 @@ baidu_site_verification  :
 author:
   name             : "Zihao Huang"
   avatar           : "https://github.com/ZihaoNova.png?size=320"
-  bio              : "Zhejiang A&F University"
+  bio              : "Faculty member (Lecturer), Zhejiang A&F University"
   location         : "Hangzhou, Zhejiang, China"
   employer         :
   pubmed           :
