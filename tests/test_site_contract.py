@@ -54,7 +54,7 @@ def test_homepage_content_is_zihao_profile() -> None:
         "forest resource remote sensing",
         "forest age dynamics",
         "forest carbon cycle modeling",
-        "Selected Publications",
+        "Publications",
         "Selected Projects",
         "An Algorithm of Forest Age Estimation Based on the Forest Disturbance and Recovery Detection",
         "Integrating land use/cover change (LUCC) with forest aging",
@@ -74,17 +74,32 @@ def test_homepage_content_is_zihao_profile() -> None:
     assert homepage.count("class='paper-box'") == 3
 
 
-def test_news_section_is_preserved() -> None:
+def test_news_section_structure_is_preserved() -> None:
     homepage = read_text("_pages/about.md")
 
-    preserved_news = [
-        "I am rebuilding this academic homepage with the full WD7ang-old / AcadHomepage template as the base.",
-        "Organizing geospatial simulation workflows, raster validation notes, and project artifacts for public release.",
-        "Published a GitHub profile README focused on geospatial Python workflows.",
+    assert "id='-news'" in homepage
+    assert "# 🔥 News" in homepage
+
+
+def test_publication_journal_names_are_italicized_consistently() -> None:
+    homepage = read_text("_pages/about.md")
+
+    expected_journals = [
+        "*IEEE Transactions on Geoscience and Remote Sensing*",
+        "*Agricultural and Forest Meteorology*",
+        "*Geo-spatial Information Science*",
+        "*Ecological Indicators*",
+        "*Remote Sensing*",
+        "*ISPRS International Journal of Geo-Information*",
+        "*遥感学报*",
     ]
 
-    for item in preserved_news:
-        assert item in homepage
+    for journal in expected_journals:
+        assert journal in homepage
+
+    mojibake_snippets = ["鍦熷湴", "榛勫瓙", "閬ユ劅"]
+    for snippet in mojibake_snippets:
+        assert snippet not in homepage
 
 
 def test_navigation_anchors_are_stable() -> None:

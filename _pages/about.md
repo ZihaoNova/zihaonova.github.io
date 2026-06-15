@@ -21,12 +21,11 @@ My work has produced first-author publications in journals including **IEEE Tran
 
 <span class='anchor' id='-news'></span>
 # 🔥 News
-- *2026.06*: &nbsp;I am rebuilding this academic homepage with the full WD7ang-old / AcadHomepage template as the base.
-- *2026.06*: &nbsp;Organizing geospatial simulation workflows, raster validation notes, and project artifacts for public release.
-- *2026.05*: &nbsp;Published a GitHub profile README focused on geospatial Python workflows.
+-
 
 <span class='anchor' id='-publications'></span>
-# 📝 Selected Publications
+
+# 📝 Publications
 
 1. **Zihao Huang**, Xuejian Li, Huaqiang Du*, Weimin Zou, Guomo Zhou, Fangjie Mao, Weiliang Fan, Yanxin Xu, Chi Ni, Bo Zhang, Qi Chen, Jinjin Chen, Mengchen Hu. An Algorithm of Forest Age Estimation Based on the Forest Disturbance and Recovery Detection. *IEEE Transactions on Geoscience and Remote Sensing*, 2023, 61: 1-18.
 
@@ -89,7 +88,6 @@ My work has produced first-author publications in journals including **IEEE Tran
 
 # 💬 Services
 - Reviewer for SCI journals including *International Journal of Applied Earth Observation and Geoinformation*, *Agricultural and Forest Meteorology*, *Journal of Cleaner Production*, *Cell Reports*, *CATENA*, *Ecological Indicators*, *Journal of Environmental Management*, and *Urban Climate*.
-- Core contributor to national and provincial research projects on LUCC simulation, subtropical forest carbon cycling, LAI assimilation, forest quality improvement, national park carbon fluxes, and urban forest intelligent monitoring.
 
 <span class='anchor' id='-invited-talks'></span>
 # 🎙 Invited Talks
@@ -102,7 +100,7 @@ My work has produced first-author publications in journals including **IEEE Tran
 - *2024.11 - 2025.05*, Visiting Scholar, Faculty of Science, Forestry and Technology, University of Eastern Finland. Research direction: deep learning and artificial intelligence applications in Finnish forestry.
 
 <span class='anchor' id='-honors-and-awards'></span>
-# 🎖 Selected Honors and Awards
+# 🎖 Honors and Awards
 - National Scholarship for Doctoral Students, 2023.
 - Zhejiang Provincial Outstanding Graduate, Class of 2025.
 - Outstanding Doctoral Dissertation, Zhejiang A&F University, Class of 2025.
