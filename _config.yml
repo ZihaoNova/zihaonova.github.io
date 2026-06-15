@@ -5,7 +5,7 @@
 
 # Site Settings
 title                    : "Zihao Huang"
-description              :
+description              : ""
 url                      : "https://zihaonova.github.io"
 repository               : "ZihaoNova/ZihaoNova.github.io"
 google_scholar_stats_use_cdn : true
@@ -23,13 +23,13 @@ baidu_site_verification  :
 author:
   name             : "Zihao Huang"
   avatar           : "https://github.com/ZihaoNova.png?size=320"
-  bio              : "Faculty member (Lecturer), Zhejiang A&F University"
+  bio              : "Lecturer, Zhejiang A&F University"
   location         : "Hangzhou, Zhejiang, China"
   employer         :
   pubmed           :
-  googlescholar    :
+  googlescholar    : "https://scholar.google.com/citations?user=HwPlKVIAAAAJ&hl=en"
   email            : "huangzihao@zafu.edu.cn"
-  researchgate     :
+  researchgate     : "https://www.researchgate.net/profile/Zihao-Huang-8?ev=hdr_xprf"
 
   wechat           :
   rednote          :
@@ -49,7 +49,7 @@ author:
   lastfm           :
   linkedin         :
   dblp             :
-  orcid            :
+  orcid            : "https://orcid.org/my-orcid?orcid=0000-0002-7443-6515"
   pinterest        :
   soundcloud       :
   stackoverflow    :
