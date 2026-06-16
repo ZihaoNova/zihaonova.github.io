@@ -21,8 +21,8 @@ My work has produced first-author publications in journals including **IEEE Tran
 # 🔥 News
 - 2026.06, I launched this academic personal homepage.
 - 2026.05, I published a GitHub profile README focused on geospatial Python workflows.
-- 2025.07, One paper was accepted by *Ecological Indicators*.
-- 2025.04, One paper was accepted by *Agricultural and Forest Meteorology*.
+- 2025.07, 🎉🎉 One paper was accepted by *Ecological Indicators*.
+- 2025.04, 🎉🎉 One paper was accepted by *Agricultural and Forest Meteorology*.
 
 <span class='anchor' id='-publications'></span>
 # 📝 Publications
