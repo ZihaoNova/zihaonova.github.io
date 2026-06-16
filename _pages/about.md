@@ -16,12 +16,14 @@ My research connects multi-source remote sensing, geospatial modeling, machine l
 I received my Ph.D. in Forestry from Zhejiang A&F University in 2025 and was a visiting scholar at the **University of Eastern Finland** from 2024 to 2025, focusing on deep learning and artificial intelligence applications in Finnish forestry.
 
 My work has produced first-author publications in journals including **IEEE Transactions on Geoscience and Remote Sensing**, **Agricultural and Forest Meteorology**, **Geo-spatial Information Science**, **Remote Sensing**, and **ISPRS International Journal of Geo-Information**. I am interested in collaboration on forest remote sensing, LUCC simulation, forest carbon accounting, and reproducible geospatial Python tooling.
+
 <span class='anchor' id='-news'></span>
 # 🔥 News
 - 2026.06, I released this academic personal homepage. Welcome to my homepage!
 - 2026.05, I Published a GitHub profile README focused on geospatial Python workflows.
 - 2025.07, 🎉One paper  was accepted by Ecological Indicators.
 - 2025.04, 🎉One paper was accepted by Agricultural and Forest Meteorology.
+
 <span class='anchor' id='-publications'></span>
 # 📝 Publications
 1. **Zihao Huang**, Xuejian Li, Huaqiang Du, Weimin Zou, Guomo Zhou, Fangjie Mao, Weiliang Fan, Yanxin Xu, Chi Ni, Bo Zhang, Qi Chen, Jinjin Chen, Mengchen Hu. An Algorithm of Forest Age Estimation Based on the Forest Disturbance and Recovery Detection. **IEEE Transactions on Geoscience and Remote Sensing**, 2023, 61: 1-18. **(SCI, 中科院1区Top, JCR Q1, IF=8.8)**
@@ -80,22 +82,26 @@ My work has produced first-author publications in journals including **IEEE Tran
 # 🏢 Experience
 - 2025.07 - Present, **Lecturer**, School of Environmental and Resource Sciences, **Zhejiang A&F University**. Research direction: effects of land-cover change and forest age dynamics on forest carbon cycles.
 - 2024.11 - 2025.05, **Visiting Scholar**, Faculty of Science, Forestry and Technology, **University of Eastern Finland**. Research direction: deep learning and artificial intelligence applications in Finnish forestry.
+
 <span class='anchor' id='-educations'></span>
 # 📖 Educations
 - 2021.09 - 2025.06, Ph.D. degree in Forestry, Zhejiang A&F University.
 - 2018.09 - 2021.06, M.S. degree in Forest Management, Zhejiang A&F University.
 - 2014.09 - 2018.06, B.S. degree in Geographic Information Science (GIS), Nanjing Tech University.
 <span class='anchor' id='-honors-and-awards'></span>
+
 # 🎖 Honors and Awards
 - 2023.10, **National Scholarship** (Top 1%).
 - 2025.04, Zhejiang Provincial Outstanding Graduate.
 - 2025.06, Outstanding Doctoral Dissertation, Zhejiang A&F University.
 - 2021.09-2024.09, First-class Academic Scholarship for Doctoral Students.
+
 <span class='anchor' id='-invited-talks'></span>
 # 🎙 Talks
 - 2025.11.07 - 2025.11.09, "整合多光谱指数与LandTrendr算法的时间序列林龄估算方法", 第二届浙江省遥感科学前沿交叉论坛, 中国杭州.
 - 2025.11.07 - 2025.11.09, "CA耦合Markov模型的不同气候情景下土地利用变化时空模拟-以安吉县竹林为例", 首届《遥感学报》青年学术论坛暨第六届全国遥感地理信息研究生论坛, 《遥感学报》线上直播.
 - 2021.11.60 - 2021.11.06, "Spatiotemporal LUCC Simulation under RCP Scenarios Based on the BPNN_CA_Markov Model: A Case Study of Bamboo Forest in Anji County", 3rd International Symposium on Carbon Cycling, Sequestration and Emission Reduction in Agricultural and Forest Ecosystems, Hangzhou, China.
+
 <span class='anchor' id='-services'></span>
 # 💬 Services
 - 2021.09 - Present, Reviewer for SCI journals including **International Journal of Applied Earth Observation and Geoinformation**, **Agricultural and Forest Meteorology**, **Journal of Cleaner Production**, **Cell Reports**, **CATENA**, **Ecological Indicators**, **Journal of Environmental Management,** and **Urban Climate**.
