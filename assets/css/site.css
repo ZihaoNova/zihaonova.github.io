@@ -1,3 +1,67 @@
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-display: block;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/fa-solid-900.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-display: block;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/fa-brands-400.woff2") format("woff2");
+}
+
+.fas {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.fab {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+}
+
+.fas,
+.fab {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-map-marker-alt:before {
+  content: "\f3c5";
+}
+
+.fa-link:before {
+  content: "\f0c1";
+}
+
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+.fa-github:before {
+  content: "\f09b";
+}
+
+.fa-weixin:before {
+  content: "\f1d7";
+}
+
+.fa-book-open:before {
+  content: "\f518";
+}
+
 :root {
   --bg: #f8fbff;
   --paper: #fff;
@@ -105,6 +169,16 @@ img {
   padding-right: 1.25rem;
 }
 
+.masthead__brand-name {
+  color: #0f172a;
+  font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 1.18rem;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
 #main {
   display: grid;
   gap: 2.4rem;
@@ -177,12 +251,17 @@ img.author__avatar {
   box-shadow: none;
   display: block;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
+  max-width: max-content;
   padding: 0;
+  text-align: left;
 }
 
 .author__urls li {
+  align-items: center;
   color: var(--muted);
+  display: flex;
+  gap: .45rem;
   line-height: 1.45;
   margin: .45rem 0;
   overflow-wrap: anywhere;
@@ -197,7 +276,10 @@ img.author__avatar {
 
 .author__urls a,
 .author__urls_sm a {
+  align-items: center;
   color: inherit;
+  display: inline-flex;
+  gap: .45rem;
   text-decoration: none;
 }
 
@@ -224,12 +306,24 @@ img.author__avatar {
   color: #64748b;
 }
 
+.author__urls .fa-link {
+  color: #2563eb;
+}
+
 .author__urls .fa-github {
   color: #111827;
 }
 
+.author__urls .ai-researchgate {
+  color: #00a99d;
+}
+
 .author__urls .ai-google-scholar {
   color: #2563eb;
+}
+
+.author__urls .ai-orcid {
+  color: #a6ce39;
 }
 
 .author__urls .fa-weixin {
@@ -252,12 +346,24 @@ img.author__avatar {
   color: #64748b;
 }
 
+.author__urls_sm .fa-link {
+  color: #2563eb;
+}
+
 .author__urls_sm .fa-github {
   color: #111827;
 }
 
+.author__urls_sm .ai-researchgate {
+  color: #00a99d;
+}
+
 .author__urls_sm .ai-google-scholar {
   color: #2563eb;
+}
+
+.author__urls_sm .ai-orcid {
+  color: #a6ce39;
 }
 
 .author__urls_sm .fa-weixin {

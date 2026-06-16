@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
-  <title id="title">Zihao Huang geospatial icon</title>
-  <rect width="128" height="128" rx="28" fill="#f8fbff"/>
-  <path d="M22 84c18-38 43-54 84-42" fill="none" stroke="#2563eb" stroke-width="8" stroke-linecap="round"/>
-  <path d="M26 92c24-10 42-10 76 0" fill="none" stroke="#0f766e" stroke-width="8" stroke-linecap="round"/>
-  <circle cx="48" cy="46" r="10" fill="#16a34a"/>
-  <rect x="70" y="54" width="24" height="24" rx="4" fill="#93c5fd"/>
-  <path d="M32 104h64" stroke="#111827" stroke-width="6" stroke-linecap="round"/>
-</svg>

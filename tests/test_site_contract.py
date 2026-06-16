@@ -164,6 +164,19 @@ def test_sidebar_contact_icons_match_colored_reference() -> None:
     template = read_text("_includes/author-profile.html")
     css = read_text("assets/css/site.css")
 
+    required_fontawesome_snippets = [
+        '@font-face {\n  font-family: "Font Awesome 5 Free";',
+        'src: url("../fonts/fa-solid-900.woff2") format("woff2");',
+        '@font-face {\n  font-family: "Font Awesome 5 Brands";',
+        'src: url("../fonts/fa-brands-400.woff2") format("woff2");',
+        ".fas {\n  font-family: \"Font Awesome 5 Free\";",
+        ".fab {\n  font-family: \"Font Awesome 5 Brands\";",
+        ".fa-fw {\n  text-align: center;",
+    ]
+
+    for snippet in required_fontawesome_snippets:
+        assert snippet in css
+
     required_template_snippets = [
         'fa-map-marker-alt" aria-hidden="true"></i> {{ author.location }}',
         'fa-envelope" aria-hidden="true"></i> Email',
@@ -187,6 +200,17 @@ def test_sidebar_contact_icons_match_colored_reference() -> None:
 
     for snippet in required_css_snippets:
         assert snippet in css
+
+
+def test_masthead_uses_styled_zihao_brand() -> None:
+    masthead = read_text("_includes/masthead.html")
+    css = read_text("assets/css/site.css")
+
+    assert ">Homepage<" not in masthead
+    assert '<a class="masthead__brand-name" href="#about-me">Zihao Huang</a>' in masthead
+    assert ".masthead__brand-name {" in css
+    assert 'font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;' in css
+    assert "font-style: italic;" in css
 
 
 def test_public_site_does_not_render_template_author_content() -> None:
