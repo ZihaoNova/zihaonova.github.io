@@ -23,8 +23,8 @@ baidu_site_verification  :
 author:
   name             : "Zihao Huang"
   avatar           : "https://github.com/ZihaoNova.png?size=320"
-  bio              : "Lecturer"
-  location         : "China"
+  bio              : "Faculty member (Lecturer), Zhejiang A&F University"
+  location         : "Hangzhou, Zhejiang, China"
   employer         : "Zhejiang A&F University"
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=HwPlKVIAAAAJ&hl=en"
@@ -34,7 +34,7 @@ author:
   wechat           :
   rednote          : "/images/RedNote.jpg"
 
-  # uri              : "https://zihaonova.github.io"
+  uri              : "https://zihaonova.github.io"
   bitbucket        :
   codepen          :
   dribbble         :

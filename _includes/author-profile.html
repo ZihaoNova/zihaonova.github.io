@@ -23,10 +23,10 @@
     <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
 
     <!-- ============================================== -->
-    <!-- PC <li>) -->
+    <!-- 第一部分：电脑端显示的列表 (有图标、有文字、带 <li>) -->
     <!-- ============================================== -->
     <ul class="author__urls social-icons">
-      {% if site.description %}
+      {% if site.description and site.description != "" %}
         <li><div style="white-space: normal; margin-bottom: 1em;">{{ site.description }}</div></li>
       {% endif %}
       {% if author.location %}

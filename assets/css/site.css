@@ -193,8 +193,9 @@ img {
 
 .masthead__brand-name {
   color: #0f172a;
-  font-family: "Microsoft YaHei", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
   font-size: 1.18rem;
+  font-style: italic;
   font-weight: 700;
   letter-spacing: 0;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
