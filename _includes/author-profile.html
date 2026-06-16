@@ -139,7 +139,8 @@
       {% endif %}
       {% if author.rednote %}
         <li>
-          <a href="{{ author.rednote | prepend: site.baseurl | prepend: site.url }}" target="_blank" rel="noopener noreferrer">
+          <!-- <a href="{{ author.rednote | prepend: site.baseurl | prepend: site.url }}" target="_blank" rel="noopener noreferrer"> -->
+          <a href="{{ author.rednote}}" target="_blank" rel="noopener noreferrer">
             <i class="fas fa-fw fa-book-open" aria-hidden="true"></i>Rednote
           </a>
         </li>
