@@ -39,7 +39,7 @@ My work has produced first-author publications in journals including **IEEE Tran
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">LUCC Simulation</div><img src='images/raster-validation.svg' alt="Raster validation and AOI smoke checks" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">LUCC Simulation</div><img src='images/LUCC simulation under climate and human effects.png' alt="Raster validation and AOI smoke checks" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **LUCC simulation under climate and human effects**
