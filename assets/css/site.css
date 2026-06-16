@@ -411,13 +411,13 @@ h1:before {
 
 .paper-box {
   align-items: center;
-  border-bottom: 1px solid #e5edf7;
+  border-bottom: 0.5px solid #e5edf7;
   border-radius: 8px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: .4rem;
-  padding: 2rem .7rem;
+  margin-bottom: .2rem;
+  padding: 0.5rem .7rem;
   transition: background-color .2s ease, box-shadow .2s ease;
 }
 
