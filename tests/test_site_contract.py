@@ -182,8 +182,8 @@ def test_sidebar_contact_icons_match_current_config() -> None:
         assert snippet in css
 
     required_template_snippets = [
-        '{% include base_path %}',
         'author.avatar contains "://"',
+        'prepend: site.baseurl',
         '{% if site.description and site.description != "" %}',
         'fa fa-fw fa-map-marker-alt" aria-hidden="true"></i>{{ author.location }}',
         'fa-building" aria-hidden="true"></i>{{ author.employer }}',
@@ -197,6 +197,8 @@ def test_sidebar_contact_icons_match_current_config() -> None:
     ]
     for snippet in required_template_snippets:
         assert snippet in template
+
+    assert "{% include base_path %}" not in template
 
     required_css_snippets = [
         ".author__urls .fa-map-marker-alt {\n  color: #ef4444;\n}",
