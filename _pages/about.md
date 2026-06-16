@@ -26,12 +26,12 @@ My work has produced first-author publications in journals including **IEEE Tran
 
 <span class='anchor' id='-interests'></span>
 # 🚀 Interests
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Simulation</div><img src='images/land-cover-simulation.svg' alt="Land-cover simulation workflow" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Forest Age</div><img src='images/Forest age estimation from disturbance and recovery.png' width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Forest age estimation from disturbance and recovery**
 
-**Zihao Huang**
+**Method**：LandTrendr / CCDC，Remote Sensing，Machine Learning
 
 **Related paper:** TGRS 2023
 
@@ -39,12 +39,12 @@ My work has produced first-author publications in journals including **IEEE Tran
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Raster QA</div><img src='images/raster-validation.svg' alt="Raster validation and AOI smoke checks" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">LUCC Simulation</div><img src='images/raster-validation.svg' alt="Raster validation and AOI smoke checks" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **LUCC simulation under climate and human effects**
 
-**Zihao Huang**
+**Method**：FLUS/PLUS-SD model，Remote Sensing，Deep Learning
 
 **Related papers:** Remote Sensing 2022; ISPRS IJGI 2020
 
@@ -52,12 +52,12 @@ My work has produced first-author publications in journals including **IEEE Tran
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Scalable CA</div><img src='images/dask-pipeline.svg' alt="Windowed CA and Dask pipeline" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Forest Carbon</div><img src='images/Forest carbon storage and NEP projection.png' alt="Windowed CA and Dask pipeline" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 **Forest carbon storage and NEP projection**
 
-**Zihao Huang**
+**Method**：InTEC / BIOME-BGC model，PLS-SEM analysis, Scenario Simulation
 
 **Related papers:** AFM 2025; Geo-spatial Information Science 2025
 
