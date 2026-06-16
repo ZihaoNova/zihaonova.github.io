@@ -154,10 +154,16 @@ def test_custom_visual_assets_and_polish_exist() -> None:
 
     assert "Zihao Huang custom polish" in css
     assert ".site-footer" in css
-    assert 'href="assets/css/site.css"' in head
+    assert 'href="{{ \'/assets/css/site.css\' | relative_url }}?v={{ site.time | date: \'%s\' }}"' in head
     assert ".paper-box" in site_css
     assert "linear-gradient(135deg, #2563eb, #0f766e)" in css
     assert "<base target=" not in head
+
+
+def test_site_css_link_is_cache_busted_for_github_pages() -> None:
+    head = read_text("_includes/head.html")
+
+    assert 'href="{{ \'/assets/css/site.css\' | relative_url }}?v={{ site.time | date: \'%s\' }}"' in head
 
 
 def test_sidebar_contact_icons_match_colored_reference() -> None:
@@ -169,21 +175,28 @@ def test_sidebar_contact_icons_match_colored_reference() -> None:
         'src: url("../fonts/fa-solid-900.woff2") format("woff2");',
         '@font-face {\n  font-family: "Font Awesome 5 Brands";',
         'src: url("../fonts/fa-brands-400.woff2") format("woff2");',
+        ".fa {\n  font-family: \"Font Awesome 5 Free\";",
         ".fas {\n  font-family: \"Font Awesome 5 Free\";",
         ".fab {\n  font-family: \"Font Awesome 5 Brands\";",
         ".fa-fw {\n  text-align: center;",
+        '.fa-researchgate:before {\n  content: "\\f4f8";\n}',
+        '.fa-graduation-cap:before {\n  content: "\\f19d";\n}',
     ]
 
     for snippet in required_fontawesome_snippets:
         assert snippet in css
 
     required_template_snippets = [
-        'fa-map-marker-alt" aria-hidden="true"></i> {{ author.location }}',
-        'fa-envelope" aria-hidden="true"></i> Email',
-        'fa-github" aria-hidden="true"></i> GitHub',
-        'ai-google-scholar ai-fw" aria-hidden="true"></i> Google Scholar',
-        'fa-weixin" aria-hidden="true"></i> WeChat',
-        'fa-book-open" aria-hidden="true"></i> Rednote',
+        '{% include base_path %}',
+        'author.avatar contains "://"',
+        'fa fa-fw fa-map-marker-alt" aria-hidden="true"></i>{{ author.location }}',
+        'fa-envelope" aria-hidden="true"></i>Email',
+        'fa-researchgate" aria-hidden="true"></i>ResearchGate',
+        'fa-github" aria-hidden="true"></i>GitHub',
+        'fa-graduation-cap" aria-hidden="true"></i>Google Scholar',
+        'ai-orcid ai-fw" aria-hidden="true"></i>ORCID',
+        'fa-weixin" aria-hidden="true"></i>WeChat',
+        'fa-book-open" aria-hidden="true"></i>Rednote',
     ]
 
     for snippet in required_template_snippets:
@@ -193,7 +206,9 @@ def test_sidebar_contact_icons_match_colored_reference() -> None:
         ".author__urls .fa-map-marker-alt {\n  color: #ef4444;\n}",
         ".author__urls .fa-envelope {\n  color: #64748b;\n}",
         ".author__urls .fa-github {\n  color: #111827;\n}",
-        ".author__urls .ai-google-scholar {\n  color: #2563eb;\n}",
+        ".author__urls .fa-researchgate {\n  color: #00a99d;\n}",
+        ".author__urls .fa-graduation-cap {\n  color: #475569;\n}",
+        ".author__urls .ai-orcid {\n  color: #a6ce39;\n}",
         ".author__urls .fa-weixin {\n  color: #07c160;\n}",
         ".author__urls .fa-book-open {\n  color: #ef4444;\n}",
     ]

@@ -14,6 +14,11 @@
   src: url("../fonts/fa-brands-400.woff2") format("woff2");
 }
 
+.fa {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
 .fas {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -24,6 +29,7 @@
   font-weight: 400;
 }
 
+.fa,
 .fas,
 .fab {
   display: inline-block;
@@ -50,8 +56,24 @@
   content: "\f0e0";
 }
 
+.fa-building:before {
+  content: "\f1ad";
+}
+
+.fa-key:before {
+  content: "\f084";
+}
+
 .fa-github:before {
   content: "\f09b";
+}
+
+.fa-researchgate:before {
+  content: "\f4f8";
+}
+
+.fa-graduation-cap:before {
+  content: "\f19d";
 }
 
 .fa-weixin:before {
@@ -314,8 +336,16 @@ img.author__avatar {
   color: #111827;
 }
 
+.author__urls .fa-researchgate {
+  color: #00a99d;
+}
+
 .author__urls .ai-researchgate {
   color: #00a99d;
+}
+
+.author__urls .fa-graduation-cap {
+  color: #475569;
 }
 
 .author__urls .ai-google-scholar {
@@ -354,8 +384,16 @@ img.author__avatar {
   color: #111827;
 }
 
+.author__urls_sm .fa-researchgate {
+  color: #00a99d;
+}
+
 .author__urls_sm .ai-researchgate {
   color: #00a99d;
+}
+
+.author__urls_sm .fa-graduation-cap {
+  color: #475569;
 }
 
 .author__urls_sm .ai-google-scholar {
