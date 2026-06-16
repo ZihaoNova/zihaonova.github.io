@@ -162,7 +162,7 @@ def test_custom_visual_assets_and_polish_exist() -> None:
 
 def test_sidebar_contact_icons_match_colored_reference() -> None:
     template = read_text("_includes/author-profile.html")
-    css = read_text("assets/css/main.scss")
+    css = read_text("assets/css/site.css")
 
     required_template_snippets = [
         'fa-map-marker-alt" aria-hidden="true"></i> {{ author.location }}',
@@ -177,12 +177,12 @@ def test_sidebar_contact_icons_match_colored_reference() -> None:
         assert snippet in template
 
     required_css_snippets = [
-        ".author__urls .fa-map-marker-alt {\n    color: #ef4444;",
-        ".author__urls .fa-envelope {\n    color: #64748b;",
-        ".author__urls .fa-github {\n    color: #111827;",
-        ".author__urls .ai-google-scholar {\n    color: #2563eb;",
-        ".author__urls .fa-weixin {\n    color: #07c160;",
-        ".author__urls .fa-book-open {\n    color: #ef4444;",
+        ".author__urls .fa-map-marker-alt {\n  color: #ef4444;\n}",
+        ".author__urls .fa-envelope {\n  color: #64748b;\n}",
+        ".author__urls .fa-github {\n  color: #111827;\n}",
+        ".author__urls .ai-google-scholar {\n  color: #2563eb;\n}",
+        ".author__urls .fa-weixin {\n  color: #07c160;\n}",
+        ".author__urls .fa-book-open {\n  color: #ef4444;\n}",
     ]
 
     for snippet in required_css_snippets:
