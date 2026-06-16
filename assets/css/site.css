@@ -362,6 +362,12 @@ img.author__avatar {
   margin-bottom: .35rem;
 }
 
+.publication__alt {
+  color: var(--muted);
+  display: inline-block;
+  margin-top: .12rem;
+}
+
 .anchor:before,
 h1:before {
   content: "";

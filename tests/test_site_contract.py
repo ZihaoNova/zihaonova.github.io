@@ -95,6 +95,17 @@ def test_homepage_content_is_clean_utf8_profile() -> None:
     assert homepage.count("class='paper-box'") == 3
 
 
+def test_bilingual_publication_entry_has_explicit_second_line_alignment() -> None:
+    homepage = read_text("_pages/about.md")
+    css = read_text("assets/css/site.css")
+
+    assert "National Remote Sensing Bulletin" in homepage
+    assert '<span class="publication__alt">' in homepage
+    assert ".publication__alt {" in css
+    assert "display: inline-block;" in css
+    assert "margin-top: .12rem;" in css
+
+
 def test_navigation_anchors_match_homepage_sections() -> None:
     navigation = read_text("_data/navigation.yml")
     homepage = read_text("_pages/about.md")
