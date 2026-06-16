@@ -1,4 +1,4 @@
-﻿{% include base_path %}
+{% include base_path %}
 
 {% if page.author and site.data.authors[page.author] %}
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
@@ -23,7 +23,7 @@
     <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
 
     <!-- ============================================== -->
-    <!-- 绗竴閮ㄥ垎锛氱數鑴戠鏄剧ず鐨勫垪琛?(鏈夊浘鏍囥€佹湁鏂囧瓧銆佸甫 <li>) -->
+    <!-- PC <li>) -->
     <!-- ============================================== -->
     <ul class="author__urls social-icons">
       {% if site.description %}
@@ -129,7 +129,7 @@
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
       {% endif %}
 
-      <!-- 锛侊紒杩欓噷鏄數鑴戠澧炲姞鐨勫井淇″拰灏忕孩涔︼紒锛?-->
+      <!-- WeChat and Rednote -->
       {% if author.wechat %}
         <li>
           <a href="{{ author.wechat | prepend: site.baseurl | prepend: site.url }}" target="_blank" rel="noopener noreferrer">
@@ -149,7 +149,7 @@
 
 
     <!-- ============================================== -->
-    <!-- 绗簩閮ㄥ垎锛氭墜鏈虹/绐勫睆鏄剧ず鐨勫垪琛?(鍙湁鍥炬爣銆佹棤鏂囧瓧銆佹棤 <li>) -->
+    <!-- 第二部分：移动端/平板显示的列表(只有图标，没有文字，没有 <li>) -->
     <!-- ============================================== -->
     <div class="author__urls_sm">
       {% if author.uri %}
@@ -246,7 +246,7 @@
         <a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i></a>
       {% endif %}
 
-      <!-- 锛侊紒杩欓噷鏄墜鏈虹澧炲姞鐨勫井淇″拰灏忕孩涔︼紙鍘绘帀浜?<li> 鍜屾枃瀛楋級 锛侊紒 -->
+      <!-- WeChat and Rednote -->
       {% if author.wechat %}
         <a href="{{ author.wechat | prepend: site.baseurl | prepend: site.url }}" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-fw fa-weixin" aria-hidden="true"></i>

@@ -23,16 +23,16 @@ baidu_site_verification  :
 author:
   name             : "Zihao Huang"
   avatar           : "https://github.com/ZihaoNova.png?size=320"
-  bio              : "Lecturer, Zhejiang A&F University"
-  location         : "Hangzhou, Zhejiang, China"
-  employer         :
+  bio              : "Lecturer"
+  location         : "China"
+  employer         : "Zhejiang A&F University"
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=HwPlKVIAAAAJ&hl=en"
   email            : "zihhuang@outlook.com"
   researchgate     : "https://www.researchgate.net/profile/Zihao-Huang-8?ev=hdr_xprf"
 
   wechat           :
-  rednote          :
+  rednote          : "/images/RedNote.jpg"
 
   # uri              : "https://zihaonova.github.io"
   bitbucket        :
