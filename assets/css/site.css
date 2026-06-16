@@ -358,8 +358,29 @@ img.author__avatar {
   padding-left: 1.25rem;
 }
 
+.page__content ol {
+  counter-reset: publication-counter;
+  list-style: none;
+  margin: .3rem 0 0;
+  padding-left: 0;
+}
+
 .page__content li {
   margin-bottom: .35rem;
+}
+
+.page__content ol > li {
+  counter-increment: publication-counter;
+  padding-left: 1.75rem;
+  position: relative;
+}
+
+.page__content ol > li::before {
+  content: counter(publication-counter) ".";
+  font-weight: 600;
+  left: 0;
+  position: absolute;
+  top: 0;
 }
 
 .publication__alt {

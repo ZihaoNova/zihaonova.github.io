@@ -106,6 +106,30 @@ def test_bilingual_publication_entry_has_explicit_second_line_alignment() -> Non
     assert "margin-top: .12rem;" in css
 
 
+def test_publications_ordered_list_aligns_with_section_heading() -> None:
+    css = read_text("assets/css/site.css")
+
+    required_snippets = [
+        ".page__content ol {",
+        "counter-reset: publication-counter;",
+        "list-style: none;",
+        "margin: .3rem 0 0;",
+        "padding-left: 0;",
+        ".page__content ol > li {",
+        "counter-increment: publication-counter;",
+        "padding-left: 1.75rem;",
+        "position: relative;",
+        ".page__content ol > li::before {",
+        'content: counter(publication-counter) ".";',
+        "left: 0;",
+        "position: absolute;",
+        "top: 0;",
+    ]
+
+    for snippet in required_snippets:
+        assert snippet in css
+
+
 def test_navigation_anchors_match_homepage_sections() -> None:
     navigation = read_text("_data/navigation.yml")
     homepage = read_text("_pages/about.md")
