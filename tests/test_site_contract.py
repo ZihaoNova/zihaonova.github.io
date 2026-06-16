@@ -160,6 +160,35 @@ def test_custom_visual_assets_and_polish_exist() -> None:
     assert "<base target=" not in head
 
 
+def test_sidebar_contact_icons_match_colored_reference() -> None:
+    template = read_text("_includes/author-profile.html")
+    css = read_text("assets/css/main.scss")
+
+    required_template_snippets = [
+        'fa-map-marker-alt" aria-hidden="true"></i> {{ author.location }}',
+        'fa-envelope" aria-hidden="true"></i> Email',
+        'fa-github" aria-hidden="true"></i> GitHub',
+        'ai-google-scholar ai-fw" aria-hidden="true"></i> Google Scholar',
+        'fa-weixin" aria-hidden="true"></i> WeChat',
+        'fa-book-open" aria-hidden="true"></i> Rednote',
+    ]
+
+    for snippet in required_template_snippets:
+        assert snippet in template
+
+    required_css_snippets = [
+        ".author__urls .fa-map-marker-alt {\n    color: #ef4444;",
+        ".author__urls .fa-envelope {\n    color: #64748b;",
+        ".author__urls .fa-github {\n    color: #111827;",
+        ".author__urls .ai-google-scholar {\n    color: #2563eb;",
+        ".author__urls .fa-weixin {\n    color: #07c160;",
+        ".author__urls .fa-book-open {\n    color: #ef4444;",
+    ]
+
+    for snippet in required_css_snippets:
+        assert snippet in css
+
+
 def test_public_site_does_not_render_template_author_content() -> None:
     public_files = [
         "_config.yml",

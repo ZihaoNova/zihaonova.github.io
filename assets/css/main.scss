@@ -226,13 +226,25 @@ body {
     width: 1.2rem;
 }
 
-.author__urls .fa-map-marker-alt,
 .author__urls .fa-building,
-.author__urls .fa-link,
-.author__urls .fa-envelope,
-.author__urls .fa-github,
-.author__urls .ai-google-scholar {
+.author__urls .fa-link {
     color: #111827;
+}
+
+.author__urls .fa-map-marker-alt {
+    color: #ef4444;
+}
+
+.author__urls .fa-envelope {
+    color: #64748b;
+}
+
+.author__urls .fa-github {
+    color: #111827;
+}
+
+.author__urls .ai-google-scholar {
+    color: #2563eb;
 }
 
 .author__urls .ai-researchgate {
@@ -273,6 +285,22 @@ body {
 
 .author__urls_sm .ai-researchgate {
     color: #00a99d;
+}
+
+.author__urls_sm .fa-map-marker-alt {
+    color: #ef4444;
+}
+
+.author__urls_sm .fa-envelope {
+    color: #64748b;
+}
+
+.author__urls_sm .fa-github {
+    color: #111827;
+}
+
+.author__urls_sm .ai-google-scholar {
+    color: #2563eb;
 }
 
 .author__urls_sm .ai-orcid {
