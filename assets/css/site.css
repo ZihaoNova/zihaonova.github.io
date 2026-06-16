@@ -96,6 +96,12 @@
   --shadow: rgba(15, 23, 42, 0.12);
   --max: 1180px;
   --sidebar: 260px;
+  --lh-body: 1.6;
+  --lh-compact: 1.55;
+  --lh-heading: 1.28;
+  --lh-title: 1.18;
+  --space-paragraph: 1rem;
+  --space-list: .4rem;
 }
 
 * {
@@ -112,7 +118,7 @@ body {
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.7;
+  line-height: var(--lh-body);
 }
 
 a {
@@ -250,20 +256,21 @@ img.author__avatar {
 
 .author__content {
   display: block;
-  line-height: 1.2;
+  line-height: var(--lh-compact);
   width: 100%;
 }
 
 .author__name {
   color: #0f172a;
   font-size: 1.65rem;
-  line-height: 1.15;
+  line-height: var(--lh-title);
   margin: .9rem 0 .45rem;
 }
 
 .author__bio {
   color: #475569;
-  margin: .35rem 0 1rem;
+  line-height: var(--lh-compact);
+  margin: .35rem 0 var(--space-paragraph);
 }
 
 .author__urls-wrapper {
@@ -290,7 +297,7 @@ img.author__avatar {
   color: var(--muted);
   display: flex;
   gap: .45rem;
-  line-height: 1.45;
+  line-height: var(--lh-compact);
   margin: .45rem 0;
   overflow-wrap: anywhere;
 }
@@ -344,48 +351,51 @@ img.author__avatar {
   border-bottom: 1px solid var(--line);
   color: #0f172a;
   font-size: 1.38rem;
-  line-height: 1.25;
+  line-height: var(--lh-heading);
   margin: 1.75rem 0 1rem;
   padding-bottom: .45rem;
 }
 
+.page__content p,
+.page__content li {
+  line-height: var(--lh-body);
+}
+
 .page__content p {
-  margin: 0 0 1.1rem;
+  margin: 0 0 var(--space-paragraph);
+}
+
+.page__content ul,
+.page__content ol {
+  margin-top: .3rem;
 }
 
 .page__content ul {
-  margin-top: .3rem;
   padding-left: 1.25rem;
 }
 
 .page__content ol {
-  counter-reset: publication-counter;
-  list-style: none;
-  margin: .3rem 0 0;
-  padding-left: 0;
+  list-style-position: outside;
+  padding-left: 1.4rem;
 }
 
 .page__content li {
-  margin-bottom: .35rem;
+  margin-bottom: var(--space-list);
 }
 
 .page__content ol > li {
-  counter-increment: publication-counter;
-  padding-left: 1.75rem;
-  position: relative;
+  padding-left: .15rem;
 }
 
-.page__content ol > li::before {
-  content: counter(publication-counter) ".";
+.page__content ol > li::marker {
+  color: #475569;
   font-weight: 600;
-  left: 0;
-  position: absolute;
-  top: 0;
 }
 
 .publication__alt {
   color: var(--muted);
   display: inline-block;
+  line-height: var(--lh-body);
   margin-top: .12rem;
 }
 

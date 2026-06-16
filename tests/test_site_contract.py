@@ -106,24 +106,52 @@ def test_bilingual_publication_entry_has_explicit_second_line_alignment() -> Non
     assert "margin-top: .12rem;" in css
 
 
-def test_publications_ordered_list_aligns_with_section_heading() -> None:
+def test_publications_ordered_list_matches_body_list_style_with_hanging_indent() -> None:
     css = read_text("assets/css/site.css")
 
     required_snippets = [
-        ".page__content ol {",
+        ".page__content ul,\n.page__content ol {",
+        "margin-top: .3rem;",
+        ".page__content ul {\n  padding-left: 1.25rem;\n}",
+        ".page__content ol {\n  list-style-position: outside;\n  padding-left: 1.4rem;\n}",
+        ".page__content ol > li {\n  padding-left: .15rem;\n}",
+        ".page__content ol > li::marker {\n  color: #475569;\n  font-weight: 600;\n}",
+    ]
+
+    for snippet in required_snippets:
+        assert snippet in css
+
+    removed_snippets = [
         "counter-reset: publication-counter;",
-        "list-style: none;",
-        "margin: .3rem 0 0;",
-        "padding-left: 0;",
-        ".page__content ol > li {",
         "counter-increment: publication-counter;",
-        "padding-left: 1.75rem;",
-        "position: relative;",
         ".page__content ol > li::before {",
         'content: counter(publication-counter) ".";',
-        "left: 0;",
-        "position: absolute;",
-        "top: 0;",
+    ]
+
+    for snippet in removed_snippets:
+        assert snippet not in css
+
+
+def test_typography_rhythm_uses_shared_variables() -> None:
+    css = read_text("assets/css/site.css")
+
+    required_snippets = [
+        "--lh-body: 1.7;",
+        "--lh-compact: 1.55;",
+        "--lh-heading: 1.28;",
+        "--lh-title: 1.18;",
+        "--space-paragraph: 1rem;",
+        "--space-list: .4rem;",
+        "line-height: var(--lh-body);",
+        ".author__content {\n  display: block;\n  line-height: var(--lh-compact);",
+        ".author__name {\n  color: #0f172a;\n  font-size: 1.65rem;\n  line-height: var(--lh-title);",
+        ".author__bio {\n  color: #475569;\n  line-height: var(--lh-compact);",
+        ".author__urls li {\n  align-items: center;\n  color: var(--muted);\n  display: flex;\n  gap: .45rem;\n  line-height: var(--lh-compact);",
+        ".page__content h1 {\n  border-bottom: 1px solid var(--line);\n  color: #0f172a;\n  font-size: 1.38rem;\n  line-height: var(--lh-heading);",
+        ".page__content p,\n.page__content li {\n  line-height: var(--lh-body);\n}",
+        ".page__content p {\n  margin: 0 0 var(--space-paragraph);\n}",
+        ".page__content li {\n  margin-bottom: var(--space-list);\n}",
+        ".publication__alt {\n  color: var(--muted);\n  display: inline-block;\n  line-height: var(--lh-body);\n  margin-top: .12rem;\n}",
     ]
 
     for snippet in required_snippets:
