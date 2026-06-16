@@ -163,6 +163,7 @@
 
   @include breakpoint($large) {
     display: block;
+    margin-left: 0;
   }
 
   button {
