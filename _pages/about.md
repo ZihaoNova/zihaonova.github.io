@@ -34,8 +34,8 @@ My work has produced first-author publications in journals including **IEEE Tran
 6. **Zihao Huang**, Huaqiang Du, Xuejian Li, Meng Zhang, Fangjie Mao, Di'en Zhu, Shaobai He, Hua Liu. Spatiotemporal LUCC Simulation under Different RCP Scenarios Based on the BPNN_CA_Markov Model: A Case Study of Bamboo Forest in Anji County. **ISPRS International Journal of Geo-Information**, 2020, 9(12): 718. **(SCI, 中科院3区, JCR Q2, IF=3.099)**
 7. **Zihao Huang**, Huaqiang Du, Xuejian Li, Fangjie Mao. Review of research on land use/cover change and its impact on forest carbon balance. **National Remote Sensing Bulletin**, 2025, 29(1): 49-69.<br><span class="publication__alt">[<strong>黄子豪</strong>, 杜华强, 李雪建, 毛方杰. 土地利用/覆盖变化及其对森林碳收支影响研究综述. <strong>遥感学报</strong>, 2025, 29(1): 49-69.] <strong>(EI, 中文一级期刊)</strong></span>
 
-<span class='anchor' id='-projects'></span>
-# 🚀 Selected Projects
+<span class='anchor' id='-interests'></span>
+# 🚀 Interests
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Simulation</div><img src='images/land-cover-simulation.svg' alt="Land-cover simulation workflow" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -93,8 +93,8 @@ My work has produced first-author publications in journals including **IEEE Tran
 - 2025.06, Outstanding Doctoral Dissertation, Zhejiang A&F University.
 - 2021.09 - 2024.09, First-class Academic Scholarship for Doctoral Students.
 
-<span class='anchor' id='-invited-talks'></span>
-# 🎙 Invited Talks
+<span class='anchor' id='-talks'></span>
+# 🎙 Talks
 - 2025.11.07 - 2025.11.09, "整合多光谱指数与LandTrendr算法的时间序列林龄估算方法", 第二届浙江省遥感科学前沿交叉论坛, 中国杭州.
 - 2025.11.07 - 2025.11.09, "CA耦合Markov模型的不同气候情景下土地利用变化时空模拟: 以安吉县竹林为例", 首届《遥感学报》青年学术论坛暨第六届全国遥感地理信息研究生论坛, 《遥感学报》线上直播.
 - 2021.11.05 - 2021.11.06, "Spatiotemporal LUCC Simulation under RCP Scenarios Based on the BPNN_CA_Markov Model: A Case Study of Bamboo Forest in Anji County", 3rd International Symposium on Carbon Cycling, Sequestration and Emission Reduction in Agricultural and Forest Ecosystems, Hangzhou, China.
