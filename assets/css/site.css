@@ -242,6 +242,12 @@ img.author__avatar {
   width: 100%;
 }
 
+.author__details {
+  margin: 0 auto;
+  max-width: max-content;
+  text-align: left;
+}
+
 .author__content {
   display: block;
   line-height: 1.2;
@@ -273,8 +279,8 @@ img.author__avatar {
   box-shadow: none;
   display: block;
   list-style: none;
-  margin: 0 auto;
-  max-width: max-content;
+  margin: 0;
+  max-width: none;
   padding: 0;
   text-align: left;
 }
@@ -290,7 +296,12 @@ img.author__avatar {
 }
 
 .author__urls li > i,
-.author__urls li > .ai {
+.author__urls li > .ai,
+.author__urls a > i,
+.author__urls a > .ai,
+.author__urls_sm a > i,
+.author__urls_sm a > .ai {
+  color: #94a3b8;
   display: inline-block;
   text-align: center;
   width: 1.25rem;
@@ -305,111 +316,14 @@ img.author__avatar {
   text-decoration: none;
 }
 
-.author__urls a > i,
-.author__urls a > .ai,
-.author__urls_sm a > i,
-.author__urls_sm a > .ai {
-  display: inline-block;
-  text-align: center;
-  width: 1.25rem;
-}
-
 .author__urls a:hover,
 .author__urls_sm a:hover {
   color: var(--link-hover);
   text-decoration: underline;
 }
 
-.author__urls .fa-map-marker-alt {
-  color: #ef4444;
-}
-
-.author__urls .fa-envelope {
-  color: #64748b;
-}
-
-.author__urls .fa-link {
-  color: #2563eb;
-}
-
-.author__urls .fa-github {
-  color: #111827;
-}
-
-.author__urls .fa-researchgate {
-  color: #00a99d;
-}
-
-.author__urls .ai-researchgate {
-  color: #00a99d;
-}
-
-.author__urls .fa-graduation-cap {
-  color: #475569;
-}
-
-.author__urls .ai-google-scholar {
-  color: #2563eb;
-}
-
-.author__urls .ai-orcid {
-  color: #a6ce39;
-}
-
-.author__urls .fa-weixin {
-  color: #07c160;
-}
-
-.author__urls .fa-book-open {
-  color: #ef4444;
-}
-
 .author__urls_sm {
   display: none;
-}
-
-.author__urls_sm .fa-map-marker-alt {
-  color: #ef4444;
-}
-
-.author__urls_sm .fa-envelope {
-  color: #64748b;
-}
-
-.author__urls_sm .fa-link {
-  color: #2563eb;
-}
-
-.author__urls_sm .fa-github {
-  color: #111827;
-}
-
-.author__urls_sm .fa-researchgate {
-  color: #00a99d;
-}
-
-.author__urls_sm .ai-researchgate {
-  color: #00a99d;
-}
-
-.author__urls_sm .fa-graduation-cap {
-  color: #475569;
-}
-
-.author__urls_sm .ai-google-scholar {
-  color: #2563eb;
-}
-
-.author__urls_sm .ai-orcid {
-  color: #a6ce39;
-}
-
-.author__urls_sm .fa-weixin {
-  color: #07c160;
-}
-
-.author__urls_sm .fa-book-open {
-  color: #ef4444;
 }
 
 .page {
@@ -559,6 +473,13 @@ h1:before {
   img.author__avatar {
     max-width: 88px;
     padding: 3px;
+  }
+
+  .author__details {
+    flex: 1 1 auto;
+    margin: 0;
+    max-width: none;
+    min-width: 0;
   }
 
   .author__content {

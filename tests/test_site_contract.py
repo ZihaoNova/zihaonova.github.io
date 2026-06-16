@@ -39,7 +39,7 @@ def test_site_identity_config_matches_current_public_profile() -> None:
         'repository               : "ZihaoNova/ZihaoNova.github.io"',
         'url                      : "https://zihaonova.github.io"',
         'name             : "Zihao Huang"',
-        'bio              : "Faculty member (Lecturer), Zhejiang A&F University"',
+        'bio              : "Faculty member (Lecturer)"',
         'location         : "Hangzhou, Zhejiang, China"',
         'employer         : "Zhejiang A&F University"',
         'uri              : "https://zihaonova.github.io"',
@@ -184,9 +184,10 @@ def test_sidebar_contact_icons_match_current_config() -> None:
     required_template_snippets = [
         'author.avatar contains "://"',
         'prepend: site.baseurl',
+        '<div class="author__details">',
         '{% if site.description and site.description != "" %}',
-        'fa fa-fw fa-map-marker-alt" aria-hidden="true"></i>{{ author.location }}',
-        'fa-building" aria-hidden="true"></i>{{ author.employer }}',
+        'fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>{{ author.location }}',
+        'fas fa-fw fa-building" aria-hidden="true"></i>{{ author.employer }}',
         'fa-link" aria-hidden="true"></i>Website',
         'fa-envelope" aria-hidden="true"></i>Email',
         'fa-researchgate" aria-hidden="true"></i>ResearchGate',
@@ -201,17 +202,25 @@ def test_sidebar_contact_icons_match_current_config() -> None:
     assert "{% include base_path %}" not in template
 
     required_css_snippets = [
-        ".author__urls .fa-map-marker-alt {\n  color: #ef4444;\n}",
-        ".author__urls .fa-envelope {\n  color: #64748b;\n}",
-        ".author__urls .fa-link {\n  color: #2563eb;\n}",
-        ".author__urls .fa-github {\n  color: #111827;\n}",
-        ".author__urls .fa-researchgate {\n  color: #00a99d;\n}",
-        ".author__urls .fa-graduation-cap {\n  color: #475569;\n}",
-        ".author__urls .ai-orcid {\n  color: #a6ce39;\n}",
-        ".author__urls .fa-book-open {\n  color: #ef4444;\n}",
+        ".author__details {\n  margin: 0 auto;\n  max-width: max-content;\n  text-align: left;\n}",
+        ".author__urls {\n  background: transparent;\n  border: 0;\n  box-shadow: none;\n  display: block;\n  list-style: none;\n  margin: 0;\n  max-width: none;\n  padding: 0;\n  text-align: left;\n}",
+        ".author__urls li > i,\n.author__urls li > .ai,\n.author__urls a > i,\n.author__urls a > .ai,\n.author__urls_sm a > i,\n.author__urls_sm a > .ai {\n  color: #94a3b8;\n  display: inline-block;\n  text-align: center;\n  width: 1.25rem;\n}",
     ]
     for snippet in required_css_snippets:
         assert snippet in css
+
+    removed_color_rules = [
+        ".author__urls .fa-map-marker-alt {",
+        ".author__urls .fa-envelope {",
+        ".author__urls .fa-link {",
+        ".author__urls .fa-github {",
+        ".author__urls .fa-researchgate {",
+        ".author__urls .fa-graduation-cap {",
+        ".author__urls .ai-orcid {",
+        ".author__urls .fa-book-open {",
+    ]
+    for snippet in removed_color_rules:
+        assert snippet not in css
 
 
 def test_masthead_uses_styled_zihao_brand() -> None:
