@@ -197,10 +197,10 @@ img {
   padding-right: 1.25rem;
 }
 
-.masthead__brand-name {
+.masthead__menu-item .masthead__brand-name {
   color: #0f172a;
   font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
-  font-size: 9.98rem;
+  font-size: 1.98rem;
   font-style: italic;
   font-weight: 1200;
   letter-spacing: 0;
