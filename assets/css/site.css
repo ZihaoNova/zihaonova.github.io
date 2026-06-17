@@ -94,7 +94,7 @@
   --link-hover: #1d4ed8;
   --green: #0f766e;
   --shadow: rgba(15, 23, 42, 0.12);
-  --max: 1180px;
+  --max: 1200px;
   --sidebar: 260px;
   --lh-body: 1.8;
   --lh-compact: 1.55;
@@ -200,9 +200,9 @@ img {
 .masthead__brand-name {
   color: #0f172a;
   font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
-  font-size: 1.18rem;
+  font-size: 1.38rem;
   font-style: italic;
-  font-weight: 700;
+  font-weight: 1200;
   letter-spacing: 0;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
 }
@@ -570,7 +570,7 @@ h1:before {
   }
 
   .visible-links {
-    gap: 0 .85rem;
+    gap: 1.25rem;
   }
 
   .masthead__menu-item a {
