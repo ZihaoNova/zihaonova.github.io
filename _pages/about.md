@@ -81,7 +81,7 @@ My work has produced first-author publications in journals including **IEEE Tran
 
 <span class='anchor' id='-talks'></span>
 # 🎙 Talks
-- 2025.11.07 - 2025.11.09, "整合多光谱指数与LandTrendr算法的时间序列林龄估算方法", **特邀报告**， 第二届浙江省遥感科学前沿交叉论坛, 中国杭州.
+- 2025.11.07 - 2025.11.09, "整合多光谱指数与LandTrendr算法的时间序列林龄估算方法", **特邀报告**, 第二届浙江省遥感科学前沿交叉论坛, 中国杭州.
 - 2021.11.28 - 2021.11.28, "Spatiotemporal LUCC Simulation under RCP Scenarios Based on the BPNN_CA_Markov Model: A Case Study of Bamboo Forest in Anji County", 3rd International Symposium on Carbon Cycling, Sequestration and Emission Reduction in Agricultural and Forest Ecosystems, Hangzhou, China.
 - 2021.09.25 - 2021.09.26, "CA耦合Markov模型的不同气候情景下土地利用变化时空模拟: 以安吉县竹林为例", 首届《遥感学报》青年学术论坛暨第六届全国遥感地理信息研究生论坛, 《遥感学报》线上直播.
 
