@@ -30,7 +30,7 @@ My work has produced first-author publications in journals including **IEEE Tran
 <div class='paper-box-text' markdown="1">
 **Forest age estimation from disturbance and recovery**<br>
 **Method**：LandTrendr / CCDC，Remote Sensing，Machine Learning<br>
-**Related paper:** TGRS 2023<br>
+**Related paper:** [TGRS 2023](https://ieeexplore.ieee.org/document/10272710/)<br>
 **Summary:** Time-series forest age mapping by combining LandTrendr-style disturbance and recovery detection with RF modeling, supporting spatially explicit subtropical forest age estimation.
 </div>
 </div>
@@ -38,7 +38,7 @@ My work has produced first-author publications in journals including **IEEE Tran
 <div class='paper-box-text' markdown="1">
 **LUCC simulation under climate and human effects**<br>
 **Method**：FLUS/PLUS-SD model，Remote Sensing，Deep Learning<br>
-**Related papers:** Remote Sensing 2022; ISPRS IJGI 2020<br>
+**Related papers:** [Remote Sensing 2022](https://www.mdpi.com/2072-4292/14/7/1698); [ISPRS IJGI 2020](https://www.mdpi.com/2220-9964/9/12/718)<br>
 **Summary:** Land use/cover change simulation using cellular automata, FLUS, and BPNN-CA-Markov style models to analyze future land-cover distributions under climate and human-impact scenarios.
 </div>
 </div>
@@ -46,7 +46,7 @@ My work has produced first-author publications in journals including **IEEE Tran
 <div class='paper-box-text' markdown="1">
 **Forest carbon storage and NEP projection**<br>
 **Method**：InTEC / BIOME-BGC model，PLS-SEM analysis, Scenario Simulation<br>
-**Related papers:** AFM 2025; Geo-spatial Information Science 2025<br>
+**Related papers:** [AFM 2025](https://linkinghub.elsevier.com/retrieve/pii/S0168192325000826); [Geo-spatial Information Science 2025](https://www.tandfonline.com/doi/full/10.1080/10095020.2024.2440615)<br>
 **Summary:** Remote-sensing-driven carbon storage estimation and NEP projection by linking LUCC, forest aging, BIOME-BGC / InTEC process modeling, and scenario-based attribution analysis.
 </div>
 </div>

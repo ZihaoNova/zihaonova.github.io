@@ -106,6 +106,21 @@ def test_bilingual_publication_entry_has_explicit_second_line_alignment() -> Non
     assert "margin-top: .12rem;" in css
 
 
+def test_interest_related_papers_link_to_publication_pages() -> None:
+    homepage = read_text("_pages/about.md")
+
+    required_links = [
+        "[TGRS 2023](https://ieeexplore.ieee.org/document/10272710/)",
+        "[Remote Sensing 2022](https://www.mdpi.com/2072-4292/14/7/1698)",
+        "[ISPRS IJGI 2020](https://www.mdpi.com/2220-9964/9/12/718)",
+        "[AFM 2025](https://linkinghub.elsevier.com/retrieve/pii/S0168192325000826)",
+        "[Geo-spatial Information Science 2025](https://www.tandfonline.com/doi/full/10.1080/10095020.2024.2440615)",
+    ]
+
+    for link in required_links:
+        assert link in homepage
+
+
 def test_publications_ordered_list_matches_body_list_style_with_hanging_indent() -> None:
     css = read_text("assets/css/site.css")
 
